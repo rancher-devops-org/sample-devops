@@ -2,7 +2,7 @@ stages:
 - name: build
   steps:
   - runScriptConfig:
-      image: maven:v1
+      image: maven:latest
       shellScript: mvn clean package
 timeout: 60
 notification: {}

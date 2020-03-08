@@ -2,7 +2,7 @@ stages:
 - name: build
   steps:
   - runScriptConfig:
-      image: openjdk:8-jdk-alpine
+      image: maven:v1
       shellScript: mvn clean package
 timeout: 60
 notification: {}

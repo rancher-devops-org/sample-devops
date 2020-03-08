@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: jialong-dev
+  name: nginx-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: demo-devops
+    spec:
+      containers:
+      - name: springboot-demo
+        image: docker-registry.p-w77kg-pipeline/rancher-github-adapter:v0.1
+        ports:
+        - containerPort: 8007
+        resources:
+          limits:
+            cpu: 100m
+          requests:
+            cpu: 100m

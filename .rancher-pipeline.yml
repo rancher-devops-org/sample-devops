@@ -1,0 +1,15 @@
+stages:
+- name: build
+  steps:
+  - runScriptConfig:
+      image: maven:latest
+      shellScript: mvn clean package
+- name: publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: rancher-github-adapter:v0.1
+      registry: 127.0.0.1:34808
+timeout: 60
+notification: {}

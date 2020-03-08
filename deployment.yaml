@@ -13,6 +13,8 @@ spec:
       labels:
         app: springboot-deployment
     spec:
+      imagePullSecrets:
+      - name: pipeline-docker-registry
       containers:
       - name: springboot-demo
         image: docker-registry.p-w77kg-pipeline/rancher-github-adapter:v0.1

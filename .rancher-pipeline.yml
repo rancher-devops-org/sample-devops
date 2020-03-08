@@ -11,5 +11,9 @@ stages:
       buildContext: .
       tag: rancher-github-adapter:v0.1
       registry: 127.0.0.1:34808
+- name: deployment
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 60
 notification: {}

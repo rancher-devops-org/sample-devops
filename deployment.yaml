@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: sample-demo
+        app: springboot-deployment
     spec:
       containers:
       - name: springboot-demo

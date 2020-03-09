@@ -2,7 +2,7 @@ stages:
 - name: build
   steps:
   - runScriptConfig:
-      image: registry.cn-hangzhou.aliyuncs.com/jialong-hub/jialong-common/maven:latest
+      image: registry.cn-hangzhou.aliyuncs.com/jialong-hub/jialong-common/maven:8-jdk-alpine
       shellScript: mvn clean package
 - name: publish
   steps:

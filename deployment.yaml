@@ -47,11 +47,12 @@ metadata:
   namespace: jialong-dev
   annotations: 
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   rules:  
   - http: 
       paths:
-      - path: /api/v1/users
+      - path: /api/v1/users/.*
         backend:
           serviceName: loadbalancer-springboot-service
           servicePort: 8080

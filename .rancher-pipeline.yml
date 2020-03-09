@@ -9,7 +9,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: rancher-github-adapter:v0.1
+      tag: rancher-github-adapter:v${CICD_EXECUTION_SEQUENCE}
       registry: 127.0.0.1:34808
 - name: deployment
   steps:

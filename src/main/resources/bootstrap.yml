@@ -1,8 +1,6 @@
 spring:
   application:
     name: msi-github-adapter
-  profiles:
-    active: local
 server:
   port: 8080
   servlet:

@@ -14,12 +14,12 @@ public class UserService {
 		/* MSI sample entity, usually this will be fetched from DB */
 		
 		User user = new User();
-		user.setId("msisampleuserid");
+		user.setId("jialonginfor-sampleuserid");
 		user.setCreateTime(TimeUtil.getCurrDateTime());
 		user.setUpdateTime(TimeUtil.getCurrDateTime());
-		user.setFullname("microservice generator");
-		user.setUsername("microservice");
-		user.setMail("msi@ibm.com");
+		user.setFullname("jialonginfo engineer");
+		user.setUsername("Alex");
+		user.setMail("alex@jialong.info");
 		
 		/*open below commented out code to test the exception */
 		

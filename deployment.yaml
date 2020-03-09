@@ -17,6 +17,6 @@ spec:
       - name: pipeline-docker-registry
       containers:
       - name: springboot-demo
-        image: docker-registry.p-w77kg-pipeline/rancher-github-adapter:v0.1
+        image: ${CICD_IMAGE}
         ports:
         - containerPort: 8007

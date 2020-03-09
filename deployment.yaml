@@ -17,7 +17,7 @@ spec:
       - name: pipeline-docker-registry
       containers:
       - name: loadbalancer-springboot-deployment
-        image: ${CICD_IMAGE}
+        image: ${CICD_IMAGE}:v${CICD_EXECUTION_SEQUENCE}
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

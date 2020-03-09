@@ -17,6 +17,6 @@ spec:
       - name: pipeline-docker-registry
       containers:
       - name: springboot-demo
-        image: ${CICD_IMAGE}
+        image: ${CICD_IMAGE}:v0.1
         ports:
         - containerPort: 8007

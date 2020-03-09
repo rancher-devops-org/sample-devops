@@ -1,6 +1,0 @@
-profileId: 5e154e34e8288600012be02a
-eureka: 
-  client: 
-    service-url: 
-      defaultZone: http://localhost:8761/eureka
-

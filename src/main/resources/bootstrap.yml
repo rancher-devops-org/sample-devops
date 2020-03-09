@@ -4,6 +4,6 @@ spring:
   profiles:
     active: local
 server:
-  port: 8007
+  port: 8080
   servlet:
-    context-path: /api/v1/git
+    context-path: /api/v1

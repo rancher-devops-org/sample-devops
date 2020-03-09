@@ -18,6 +18,7 @@ spec:
       containers:
       - name: loadbalancer-springboot-deployment
         image: ${CICD_IMAGE}
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 

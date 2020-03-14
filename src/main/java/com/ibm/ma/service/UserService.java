@@ -7,12 +7,15 @@ import com.ibm.ma.entity.User;
 import com.ibm.ma.exception.MSIException;
 import com.ibm.ma.util.TimeUtil;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class UserService {
 
 	public User getUserByUserId(String userId) throws MSIException {
 		/* MSI sample entity, usually this will be fetched from DB */
-		
+		log.info("get user info with user id : {}", "userId");
 		User user = new User();
 		user.setId("jialonginfor-sampleuserid");
 		user.setCreateTime(TimeUtil.getCurrDateTime());

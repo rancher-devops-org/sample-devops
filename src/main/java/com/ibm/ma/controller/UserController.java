@@ -34,7 +34,7 @@ public class UserController implements UsersApi {
 	@Override
 	public ResponseEntity<Object> getUserById(@Valid String id, String authorization) {
 		try {
-//			log.info("the value is: {}", samplevalue);
+			log.info("the value is: {}", "get user API");
 			// TODO: do your own service magic here
 			User user = mUserServie.getUserByUserId(id);
 			UserDTO dto = mUserDtoMapper.from(user);
